@@ -1,8 +1,13 @@
 import React, { Component } from "react";
-import ImagesContainer from "./containers/ImagesContainer";
+
+import AppRouter from "./routes";
 class App extends Component {
   render() {
-    return <ImagesContainer />;
+    return (
+      <div>
+        <AppRouter />
+      </div>
+    );
   }
 }
 

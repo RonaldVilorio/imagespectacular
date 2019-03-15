@@ -1,8 +1,13 @@
-import { Component } from "react";
+import React, { Component } from "react";
+import ImageList from "../components/ImageList";
 
 class ImagesContainer extends Component {
   render() {
-    return "Images";
+    return (
+      <div>
+        <ImageList />
+      </div>
+    );
   }
 }
 export default ImagesContainer;

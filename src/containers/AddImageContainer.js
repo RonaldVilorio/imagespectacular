@@ -1,8 +1,8 @@
-import { Component } from "react";
+import React, { Component } from "react";
 
 class AddImageContainer extends Component {
   render() {
-    return "Hey";
+    return "Submit Form";
   }
 }
 export default AddImageContainer;

@@ -19,7 +19,7 @@ const Oceans = () => {
   return <h2> Ocean Images </h2>;
 };
 
-function AppRouter() {
+const AppRouter = () => {
   return (
     <Router>
       <div>
@@ -52,5 +52,5 @@ function AppRouter() {
       </div>
     </Router>
   );
-}
+};
 export default AppRouter;

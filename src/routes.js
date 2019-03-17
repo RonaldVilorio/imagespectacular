@@ -21,7 +21,7 @@ const Oceans = () => {
 
 const AppRouter = () => {
   return (
-    <div id="router">
+    <React.Fragment>
       <Switch>
         <Route path="/" exact component={Index} />
         <Route path="/SubmitImage/" component={SubmitImage} />
@@ -29,7 +29,7 @@ const AppRouter = () => {
         <Route path="/Animals/" component={Animals} />
         <Route path="/Oceans/" component={Oceans} />
       </Switch>
-    </div>
+    </React.Fragment>
   );
 };
 export default AppRouter;

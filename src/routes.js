@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import AddImageContainer from "./containers/AddImageContainer";
 import ImagesContainer from "./containers/ImagesContainer";
 
@@ -21,36 +21,15 @@ const Oceans = () => {
 
 const AppRouter = () => {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/SubmitImage/">Submit Image</Link>
-            </li>
-            <li>
-              <Link to="/Nature/">Nature</Link>
-            </li>
-            <li>
-              <Link to="/Animals/">Animals</Link>
-            </li>
-            <li>
-              <Link to="/Oceans/">Oceans</Link>
-            </li>
-          </ul>
-        </nav>
-        <Switch>
-          <Route path="/" exact component={Index} />
-          <Route path="/SubmitImage/" component={SubmitImage} />
-          <Route path="/Nature/" component={Nature} />
-          <Route path="/Animals/" component={Animals} />
-          <Route path="/Oceans/" component={Oceans} />
-        </Switch>
-      </div>
-    </Router>
+    <div id="router">
+      <Switch>
+        <Route path="/" exact component={Index} />
+        <Route path="/SubmitImage/" component={SubmitImage} />
+        <Route path="/Nature/" component={Nature} />
+        <Route path="/Animals/" component={Animals} />
+        <Route path="/Oceans/" component={Oceans} />
+      </Switch>
+    </div>
   );
 };
 export default AppRouter;

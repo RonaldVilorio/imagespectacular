@@ -6,14 +6,12 @@ import SearchBar from "./components/SearchBar";
 
 class App extends Component {
   componentDidMount() {
-    async function fetchImages() {
-      const resp = await fetch("/api/images");
-      const images = await resp.json();
-      images.map(image => {
-        return <img src={image.url} key={image.id} alt={image.description} />;
-      });
-    }
-    fetchImages();
+    //   async function fetchImages() {
+    //     const resp = await fetch("/api/images");
+    //     const images = await resp.json();
+    //     return images;
+    //   }
+    //   fetchImages();
   }
   render() {
     return (

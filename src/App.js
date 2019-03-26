@@ -5,14 +5,6 @@ import { BrowserRouter as Router } from "react-router-dom";
 import SearchBar from "./components/SearchBar";
 
 class App extends Component {
-  componentDidMount() {
-    //   async function fetchImages() {
-    //     const resp = await fetch("/api/images");
-    //     const images = await resp.json();
-    //     return images;
-    //   }
-    //   fetchImages();
-  }
   render() {
     return (
       <div>

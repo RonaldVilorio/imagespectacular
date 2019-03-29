@@ -10,10 +10,10 @@ const SubmitImage = () => {
   return <AddImageContainer />;
 };
 const Nature = () => {
-  return <h2> Nature Images </h2>;
+  return <ImagesContainer filter={"nature"} />;
 };
 const Animals = () => {
-  return <h2> Animal Images </h2>;
+  return <ImagesContainer filter={"animals"} />;
 };
 const Oceans = () => {
   return <h2> Ocean Images </h2>;

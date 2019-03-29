@@ -9,11 +9,18 @@ class ImagesContainer extends Component {
     this.props.fetchImages();
   }
   render() {
-    const { images } = this.props;
+    const { images, filter } = this.props;
+    let filteredImages = images;
+    if (filter) {
+      filteredImages = images.filter(image => image.category === filter);
+    }
+    console.log(images);
     return (
       <div>
         <SearchBar />
-        {images.length > 0 ? <ImageList images={images} /> : null}
+        {filteredImages.length > 0 ? (
+          <ImageList images={filteredImages} />
+        ) : null}
       </div>
     );
   }

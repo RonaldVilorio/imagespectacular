@@ -14,7 +14,7 @@ class ImagesContainer extends Component {
     if (filter) {
       filteredImages = images.filter(image => image.category === filter);
     }
-    console.log(images);
+
     return (
       <div>
         <SearchBar />
